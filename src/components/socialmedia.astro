@@ -1,3 +1,13 @@
 ---
-import socialMedios from "../js/objects/socialMedios"
+import socialMedia from "../js/objects/socialMedia.js";
 ---
+
+<div>
+    {
+        socialMedia.map((icon) => (
+        <section>
+            <i class={icon.icon}></i>
+            <a href={icon.url}>Este es un link</a>
+        </section>
+    ))}
+</div>

@@ -1,4 +1,4 @@
-const socialMedios = [
+const socialMedia = [
     {
         id: "facebook",
         url: "",
@@ -19,4 +19,6 @@ const socialMedios = [
         url: "",
         icon: "fa-brands fa-instagram",
     },
-]
+];
+
+export default socialMedios;
