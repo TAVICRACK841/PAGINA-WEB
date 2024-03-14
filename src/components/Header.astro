@@ -4,7 +4,18 @@ console.log('javascript');
 ---
 
 <header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+    <style>
+        .imagen-redonda {
+            width: 75px; /* ajusta el tamaño de la imagen según tus necesidades */
+            height: 75px;
+            border-radius: 50%; /* hace que la imagen sea redonda */
+            overflow: hidden; /* asegura que la imagen se ajuste al radio */
+            float: right; /* coloca la imagen a la izquierda del título */
+            margin-right: 20px; /* ajusta el espacio entre la imagen y el título */
+        }
+    </style>
     <div class="mx-auto text-center mb-8 lg:mb-16">
+        <img class="imagen-redonda" src="LOGO.jpg">
         <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
             TAVICRACKWEB🎮
         </h2>
@@ -14,8 +25,9 @@ console.log('javascript');
     </div>
 
     <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
-        <a class="text-white" href="/">Últimos lanzamientos</a>
+        <a class="text-white" href="/Youtbe">Youtube</a>
         <a class="text-white" href="/oldest">Los más viejos</a>
         <a class="text-white" href="/About">Sobre el proyecto</a>
+        <a class="text-white" href="/Twitch">Twitch</a>
     </nav>
 </header>
