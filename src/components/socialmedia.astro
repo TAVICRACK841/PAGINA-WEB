@@ -6,7 +6,7 @@ import socialMedia from "../js/objects/socialMedia.js";
     {socialMedia.map((platform) => (
         <section>
             <i class={platform.icon}></i>
-            <a href={platform.url}>Este es un link</a>
+            <a href={platform.url}>{platform.name}</a>
         </section>
     ))}
 </div>
