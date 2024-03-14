@@ -21,4 +21,4 @@ const socialMedia = [
     },
 ];
 
-export default socialMedios;
+export default socialMedia;
