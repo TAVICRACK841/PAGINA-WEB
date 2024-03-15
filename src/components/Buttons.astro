@@ -1,0 +1,12 @@
+---
+import buttonPages from "../js/objects/buttonPages.js"
+---
+
+<div>
+    {buttonPages.map((platform) =>(
+        <section>
+            <i class={platform.icon}></i>
+            <a href={platform.url}>{platform.name}</a>
+        </section>
+    ))}
+</div>
