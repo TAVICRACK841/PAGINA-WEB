@@ -2,7 +2,7 @@ const socialMedia = [
     {
         id: "facebook",
         name: "Facebook",
-        url: "",
+        url: "https://www.facebook.com/share/sgF2Wj5A9NxvRLNX/?mibextid=qi2Omg",
         icon: "fa-brands fa-facebook",
     },
     {
@@ -20,7 +20,7 @@ const socialMedia = [
     {
         id: "instagram",
         name: "Instagram",
-        url: "",
+        url: "https://www.instagram.com/gustavo_lizama_?utm_source=qr&igsh=MThwYXJkNWV5ZXp3Mg==",
         icon: "fa-brands fa-instagram",
     },
 ];

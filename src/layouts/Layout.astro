@@ -19,7 +19,7 @@ import Header from '../components/Header.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-gray-500 min-h-screenn pb-32">
+	<body class="bg-white min-h-screenn pb-32">
 		<Header/>
 		<main class="max-w-5xl px-4 m-auto">
 			<slot />
@@ -54,5 +54,12 @@ import Header from '../components/Header.astro';
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+</style>
+<style>
+	body {
+		background-image: url('/src/components/imagenes/Banner.png');
+		background-size: cover;
+		background-position: center;
 	}
 </style>
