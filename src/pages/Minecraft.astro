@@ -1,6 +1,29 @@
 ---
 import Layout from "../layouts/Layout.astro"
 ---
-<Layout title="Youtbe">
-    
+<Layout title="Minecraft">
+    <style>
+            .imagen-redonda {
+                width: 100px; /* ajusta el tamaño de la imagen según tus necesidades */
+                height: 100px;
+                border-radius: 50%; /* hace que la imagen sea redonda */
+                left: 50px;
+            }
+            .button {
+                display: inline-block;
+                padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+                background-color: #007bff; /* Color de fondo del botón */
+                color: #ffffff; /* Color de texto del botón */
+                text-decoration: none; /* Quitar subrayado del enlace */
+                border: none; /* Quitar borde del botón */
+                border-radius: 5px; /* Radio de borde del botón */
+                cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+            }
+                /* Estilo de hover para el botón */
+            .button:hover {
+                background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+            }
+    </style>
+    <a href="/">Mods DE LA COMUNIDAD</a>
+    <a href="/MODS">MODS PROPIOS</a>
 </Layout>

@@ -19,14 +19,7 @@ import Header from '../components/Header.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-white min-h-screenn pb-32">
-		<style>
-			body {
-				background-image: url('/src/components/imagenes/Banner.png');
-				background-size: cover;
-				background-position: center;
-			}
-		</style>
+	<body>
 		<Header/>
 		<main class="max-w-5xl px-4 m-auto">
 			<slot />
@@ -35,32 +28,16 @@ import Header from '../components/Header.astro';
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		color-scheme: light dark;
 	}
+
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-		color-scheme: dark light;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+    body {
+        background-image: url('/src/components/imagenes/Banner.png'); /* Ruta de la imagen */
+        background-size: cover; /* Ajustar imagen al tamaño del layout */
+        background-position: center; /* Posicionar la imagen en el centro */
+    }
 </style>
 
