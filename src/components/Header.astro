@@ -1,66 +1,70 @@
 ---
 console.log('javascript');
-import Buttons from "./Buttons.astro";
+import HeaderButton from "./HeaderButton.astro";
 import SocialMedia from "./SocialMedia.astro";
 ---
 
-<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+<header>
     <style>
-        .imagen-redonda {
-            width: 100px; /* ajusta el tamaño de la imagen según tus necesidades */
-            height: 100px;
+    /* Estilos para el contenedor principal */
+        .top-bar {
+            width: 100%; /* Ancho completo */
+            height: 80px; /* Altura del box */
+            background-color: #f0f0f0; /* Color de fondo */
+            display: flex; /* Utilizamos flexbox para alinear contenido */
+            justify-content: space-between; /* Alineamos el contenido HeaderButton los extremos */
+            align-items: center; /* Alineamos verticalmente el contenido */
+            padding: 0 20px; /* Añadimos relleno HeaderButton los lados */
+            position: fixed; /* Fija la posición del box en la parte superior */
+            top: 0; /* Fija la posición en la parte superior */
+            z-index: 999; /* Asegura que esté por encima de otros elementos */
+        }
+
+        .logo {
+            width: 70px; /* Tamaño máximo del logo */
+            height: 70px; /* Para mantener la proporción del logo */
             border-radius: 50%; /* hace que la imagen sea redonda */
             overflow: hidden; /* asegura que la imagen se ajuste al radio */
-            float: left; /* coloca la imagen a la izquierda del título */
-            margin-right: -50px; /* ajusta el espacio entre la imagen y el título */
         }
+
+        .buttons {
+            display: flex; /* Utilizamos flexbox para alinear los botones */
+            gap: 10px; /* Espacio entre los botones */
+        }
+
+        .button {
+            padding: 10px 20px; /* Ajustamos el relleno del botón */
+            background-color: #007bff; /* Color de fondo del botón */
+            color: #ffffff; /* Color de texto del botón */
+            border: none; /* Quitamos el borde */
+            border-radius: 5px; /* Radio de borde */
+            cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+            text-decoration: none; /* Quitamos la subrayado del enlace */
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Cambiamos el color de fondo al pasar el cursor */
+        }
+        .bottom-left {
+            position: fixed; /* Posición fija para mantenerlo en la misma ubicación en la ventana */
+            bottom: 0; /* Coloca el componente en la parte inferior */
+            left: 0; /* Coloca el componente en el lado izquierdo */
+            padding: 20px; /* Ajusta el relleno según sea necesario */
+            background-color: #f0f0f000; /* Color de fondo del componente */
+            color: #000000; /* Color de texto del componente */
+    }
     </style>
-    <div class="mx-auto text-center mb-8 lg:mb-16">
-        <img class="imagen-redonda" src="/src/components/imagenes/LOGO.jpg">
-        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
-            TAVICRACKWEB
-        </h2>
-        <p class="font-medium text-white sm:text-xl">
-            Pagina oficial de TAVICRACK🎮
-        </p>
-    </div>
-    <style>
-        .boton-estilo {
-          /* Estilos de botón */
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #fff;
-            color: #000000;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-        }
-        
-        .boton-estilo:hover {
-            background-color: #fff;
-        }
-        </style>
-    <div class="boton-estilo">
-        <Buttons/>
-    </div>
-    <style>
-        .container {
-            position: relative;
-            height: 100vh; /* 100% de la altura de la ventana del navegador */
-        }
-        .component-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            margin: 20px; /* Margen para separarlo del borde */
-        }
-    </style>
-    <div class="container">
-        <div class="component-container">
-            <SocialMedia/>
+
+    <div class="top-bar">
+        <img src="/src/components/imagenes/LOGO.jpg" alt="Logo" class="logo">
+        <div class="buttons">
+            <HeaderButton href="/" class="button">Home</HeaderButton>
+            <HeaderButton href="/Minecraft" class="button">Minecraft</HeaderButton>
+            <HeaderButton href="/TlauncherMOd" class="button">TLauncherMOd</HeaderButton>
+            <HeaderButton href="/About" class="button">About</HeaderButton>
         </div>
+    </div>
+    <div class="bottom-left">
+        <SocialMedia/>
     </div>
 </header>
