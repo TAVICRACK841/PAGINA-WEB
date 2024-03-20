@@ -4,7 +4,10 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				azul_marino_200:"#0C7D74"
+				azul_marino_200:"#0C7D74",
+				purple_galaxy:"#7021BF",
+				lila_galaxy:"#7121A6",
+				azul_cielo_500:"#0099DD"
 			}
 		},
 	},
