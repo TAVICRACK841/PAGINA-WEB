@@ -7,9 +7,38 @@ import Layout from '../layouts/Layout.astro';
         .content {
           margin-top: 80px; /* Margen superior igual a la altura del top-bar */
         }
+        .titulo {
+      text-align: center; /* Centra el texto horizontalmente */
+      animation: moverTitulo 2s infinite alternate; /* Animación del título */
+    }
+
+    @keyframes moverTitulo {
+      0% {
+        font-size: 30px; /* Tamaño inicial del título */
+      }
+      100% {
+        font-size: 40px; /* Tamaño final del título */
+      }
+    }
+    .titulo{
+      font-size: 6em;
+      font-weight: 500;
+      color: white;
+      letter-spacing: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 1s;
+    }
+    .titulo:hover{
+      color: white;
+      text-shadow: 0 0 5px #ffbb00,
+      0 0 25px #ffbb00,
+      0 0 50px #ffbb00,
+      0 0 100px #ffbb00;
+    }
     </style>
     
     <div class="content">
-        
+      <h1 class="titulo">TAVICRACKWEB🎮</h1>
     </div>
 </Layout>
