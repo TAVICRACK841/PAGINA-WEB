@@ -1,28 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import Box from "../components/HeaderButton2.astro"
 ---
 <Layout title="Minecraft">
     <style>
         .content {
             margin-top: 100px; /* Margen superior igual a la altura del top-bar */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el ancho de las columnas */
+            gap: 20px; /* Espacio entre los boxes */
         }
+
         .box {
-            width: 300px; /* Ancho deseado del box */
+            width: 90%; /* Ajusta el ancho del box */
             height: 300px; /* Altura deseada del box */
-            background-image:url(/src/components/imagenes/Tierra.jpg); /* Color de fondo del box */
+            background-image:url(https://p4.wallpaperbetter.com/wallpaper/331/38/459/galaxy-blue-red-black-hd-wallpaper-preview.jpg); /* Color de fondo del box */
             padding: 20px; /* Espacio interior del box */
             border-radius: 10px; /* Borde redondeado del box */
             display: flex; /* Utilizamos flexbox para centrar la imagen */
             justify-content: center; /* Centramos horizontalmente */
             align-items: center; /* Centramos verticalmente */
-        }
+}
+        
         .imagen-container {
             display: flex;
             justify-content: center;
         }
         .imagen {
-            width: 100%;
+            width: 90%;
             height: auto;
             border-radius: 10px;
         }
@@ -46,20 +50,50 @@ import Box from "../components/HeaderButton2.astro"
         .button {
             align-self: center;
         }
+        .texto-con-contorno {
+            -webkit-text-stroke: 1px white; /* Para navegadores basados en WebKit */
+            -webkit-text-stroke-color: 1px white; /* Para otros navegadores */
+            color: green; /* Color del texto */
+        }
+        .texto-con-contorno2 {
+            -webkit-text-stroke: 1px black; /* Para navegadores basados en WebKit */
+            -webkit-text-stroke-color: 1px black; /* Para otros navegadores */
+            color: white; /* Color del texto */
+        }
+        .texto-con-contorno3 {
+            -webkit-text-stroke: 1px white; /* Para navegadores basados en WebKit */
+            -webkit-text-stroke-color: 1px white; /* Para otros navegadores */
+            color: black; /* Color del texto */
+        }
     </style>
     
     <div class="content">
         <div class="box">
             <div class="ui card">
                 <div class="image landscape">
-                    <img class="imagen" src="https://api.mcpedl.com/storage/submissions/89658/100/sketch1658181736649_1-520x245.png">
+                    <img class="imagen" src="https://i.ytimg.com/vi/8PFLvhlsatw/maxresdefault.jpg">
                 </div>
-                    <a class="text-green-400 font-medium">Crate Addon</a>
+                    <a class="texto-con-contorno font-extrabold">DRAGON EVOLUTION 016</a>
                     <div class="meta">
-                    <span class="date text-white font-bold" >Ramcor14_BR</span>
+                    <span class="texto-con-contorno2 font-extrabold" >Matheus 016</span>
                     </div>
                     <div class="description">
-                    <a class="button font-semibold" href="https://www.mediafire.com/file/gy9uew6otmthv7z/Create+v1.mcaddon/file">Download</a>
+                    <a class="button texto-con-contorno3 font-extrabold" href="https://www.mediafire.com/file/yseh90spe7ildwz/DBE016_V2_-_BEH.mcaddon/file">Download BEH</a>
+                    <a class="button texto-con-contorno3 font-extrabold" href="https://www.mediafire.com/file/22zec0nka0t5bko/DBE016_V2_-_RES.mcaddon/file">Download RES</a>
+                    </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="ui card">
+                <div class="image landscape">
+                    <img class="imagen" src="https://api.mcpedl.com/storage/submissions/89658/100/sketch1658181736649_1-520x245.png">
+                </div>
+                    <a class="texto-con-contorno font-extrabold">CREATE ADDON</a>
+                    <div class="meta">
+                    <span class="texto-con-contorno2 font-extrabold" >Ramcor14_BR</span>
+                    </div>
+                    <div class="description">
+                    <a class="button texto-con-contorno3 font-extrabold" href="https://www.mediafire.com/file/gy9uew6otmthv7z/Create+v1.mcaddon/file">Download</a>
                     </div>
             </div>
         </div>

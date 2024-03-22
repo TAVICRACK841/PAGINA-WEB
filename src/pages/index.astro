@@ -3,24 +3,12 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="TAVICRACKWEB🎮">
-    <style>
-        .content {
-          margin-top: 80px; /* Margen superior igual a la altura del top-bar */
-        }
-        .titulo {
+  <style>
+    .content {
+      margin-top: 80px; /* Margen superior igual a la altura del top-bar */
+    }
+    .titulo {
       text-align: center; /* Centra el texto horizontalmente */
-      animation: moverTitulo 2s infinite alternate; /* Animación del título */
-    }
-
-    @keyframes moverTitulo {
-      0% {
-        font-size: 30px; /* Tamaño inicial del título */
-      }
-      100% {
-        font-size: 40px; /* Tamaño final del título */
-      }
-    }
-    .titulo{
       font-size: 6em;
       font-weight: 500;
       color: white;
@@ -28,17 +16,74 @@ import Layout from '../layouts/Layout.astro';
       cursor: pointer;
       text-transform: uppercase;
       transition: 1s;
+      animation: moverTitulo 2s infinite alternate; /* Animación del título */
     }
-    .titulo:hover{
+    
+    @keyframes moverTitulo {
+      0% {
+        font-size: 100px; /* Tamaño inicial del título */
+      }
+      100% {
+        font-size: 50px; /* Tamaño final del título */
+      }
+    }
+    
+    .titulo:hover {
       color: white;
-      text-shadow: 0 0 5px #ffbb00,
-      0 0 25px #ffbb00,
-      0 0 50px #ffbb00,
-      0 0 100px #ffbb00;
+      text-shadow:
+                  0 0 5px #ffbb00,
+                  0 0 25px #ffbb00,
+                  0 0 50px #ffbb00,
+                  0 0 100px #ffbb00;
+    }
+    .home {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      padding: 0 10%;
+    }
+    .home-conter {
+      max-width: 600px;
+    }
+    .home-conter h1 {
+      font-size: 56px;
+      font-weight: 700;
+      text-shadow:
+      0 0 5px rgb(191, 0, 255),
+      0 0 25px rgb(191, 0, 255),
+      0 0 50px rgb(191, 0, 255),
+      0 0 100px rgb(191, 0, 255);
+    }
+    .home-conter h3 {
+      font-size: 32px;
+      font-weight: 700;
+      color: aqua;
+      text-shadow:
+      0 0 5px rgb(255, 0, 0),
+      0 0 25px rgb(255, 0, 0),
+      0 0 50px rgb(255, 0, 0),
+      0 0 100px rgb(255, 0, 0);
+    }
+    .home-conter p {
+      font-size: 20px;
+      text-shadow:
+      0 0 5px rgb(0, 255, 221),
+      0 0 25px rgb(0, 255, 221),
+      0 0 50px rgb(0, 255, 221),
+      0 0 100px rgb(0, 255, 221);
     }
     </style>
     
     <div class="content">
       <h1 class="titulo">TAVICRACKWEB🎮</h1>
+      <section class="home">
+        <div class="home-conter">
+          <h1>Hola soy Gustavo</h1>
+          <h3>Ing. Sistemas Computacionales </h3>
+          <p>En esta pagina encontraras gran variedad de informacion que suelo usar en videos o que recomiendo
+            tambien hay informacion personal mía para que me conoscan mejor
+          </p>
+        </div>
+      </section>
     </div>
 </Layout>
