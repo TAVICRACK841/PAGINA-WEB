@@ -24,6 +24,14 @@ import SocialMedia from "./SocialMedia.astro";
             height: 70px; /* Para mantener la proporción del logo */
             border-radius: 50%; /* hace que la imagen sea redonda */
             overflow: hidden; /* asegura que la imagen se ajuste al radio */
+            box-shadow: 0 0 10px #fff, /* Sombra blanca más pequeña */
+                0 0 20px #fff, /* Sombra blanca mediana */
+                0 0 30px #fff, /* Sombra blanca grande */
+                0 0 40px #ff00e8, /* Sombra rosa mediana */
+                0 0 70px #ff00e8, /* Sombra rosa grande */
+                0 0 80px #ff00e8, /* Sombra rosa muy grande */
+                0 0 100px #ff00e8, /* Sombra rosa muy muy grande */
+                0 0 150px #ff00e8; /* Sombra rosa gigante */
         }
 
         .buttons {
@@ -42,7 +50,7 @@ import SocialMedia from "./SocialMedia.astro";
         }
 
         .button:hover {
-            background-color: rgb(255, 128, 0); /* Cambiamos el color de fondo al pasar el cursor */
+            background-color: rgb(166, 0, 255); /* Cambiamos el color de fondo al pasar el cursor */
         }
         .bottom-left {
             position: fixed; /* Posición fija para mantenerlo en la misma ubicación en la ventana */
@@ -52,19 +60,38 @@ import SocialMedia from "./SocialMedia.astro";
             background-color: #f0f0f000; /* Color de fondo del componente */
             color: #000000; /* Color de texto del componente */
         }
-    
+        .neon {
+            font-size: 20px;
+            text-shadow:
+            0 0 5px rgb(181, 0, 201),
+            0 0 25px rgb(181, 0, 201),
+            0 0 50px rgb(181, 0, 201),
+            0 0 100px rgb(181, 0, 201);
+        }
+        .neon-bar {
+            font-size: 20px;
+            text-shadow:
+            0 0 5px rgb(255, 0, 221),
+            0 0 25px rgb(255, 0, 221),
+            0 0 50px rgb(255, 0, 221),
+            0 0 100px rgb(255, 0, 221);
+        }
     </style>
 
     <div class="top-bar">
         <img src="/src/components/imagenes/LOGO.jpg" alt="Logo" class="logo">
-        <div class="buttons">
-            <a href="/" class="button">Home</a>
-            <a href="/Minecraft" class="button">Minecraft</a>
-            <a href="/TlauncherMod" class="button">TLauncherMod</a>
-            <a href="/About" class="button">About</a>
+        <div class="neon-bar">
+            <div class="buttons">
+                <a href="/" class="button">Home</a>
+                <a href="/Minecraft" class="button">Minecraft</a>
+                <a href="/TlauncherMod" class="button">TLauncherMod</a>
+                <a href="/About" class="button">About</a>
+            </div>
         </div>
     </div>
-    <div class="bottom-left">
-        <SocialMedia/>
+    <div class="neon">
+        <div class="bottom-left">
+            <SocialMedia/>
+        </div>
     </div>
 </header>

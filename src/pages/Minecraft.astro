@@ -12,7 +12,7 @@ import Layout from "../layouts/Layout.astro"
 
         .box {
             width: 90%; /* Ajusta el ancho del box */
-            height: 300px; /* Altura deseada del box */
+            height: 280px; /* Altura deseada del box */
             background-image:url(https://i.pinimg.com/originals/19/b4/3d/19b43dbf92a0b307cbbe9fcbf84c60c8.jpg); /* Color de fondo del box */
             padding: 20px; /* Espacio interior del box */
             border-radius: 10px; /* Borde redondeado del box */
@@ -40,7 +40,7 @@ import Layout from "../layouts/Layout.astro"
             text-decoration: none; /* Quitamos la subrayado del enlace */
         }
         .button:hover {
-            background-color: rgb(0, 255, 64); /* Cambiamos el color de fondo al pasar el cursor */
+            background-color: rgb(0, 251, 255); /* Cambiamos el color de fondo al pasar el cursor */
         }
         .box {
             display: flex;
@@ -54,10 +54,10 @@ import Layout from "../layouts/Layout.astro"
             font-size: 20px;
             font-weight: 700;
             text-shadow:
-            0 0 5px rgb(47, 144, 2),
-            0 0 25px rgb(47, 144, 2),
-            0 0 50px rgb(47, 144, 2),
-            0 0 100px rgb(47, 144, 2);
+            0 0 5px rgb(81, 255, 0),
+            0 0 25px rgb(81, 255, 0),
+            0 0 50px rgb(81, 255, 0),
+            0 0 100px rgb(81, 255, 0);
         }
         .texto-con-contorno2 {
             font-size: 20px;
@@ -69,9 +69,13 @@ import Layout from "../layouts/Layout.astro"
             0 0 100px rgb(191, 0, 255);
         }
         .texto-con-contorno3 {
-            -webkit-text-stroke: 1px white; /* Para navegadores basados en WebKit */
-            -webkit-text-stroke-color: 1px white; /* Para otros navegadores */
-            color: black; /* Color del texto */
+            font-size: 20px;
+            font-weight: 700;
+            text-shadow:
+            0 0 5px rgb(255, 255, 255),
+            0 0 25px rgb(255, 255, 255),
+            0 0 50px rgb(255, 255, 255),
+            0 0 100px rgb(255, 255, 255);
         }
     </style>
     
@@ -105,7 +109,47 @@ import Layout from "../layouts/Layout.astro"
                     </div>
             </div>
         </div>
+        <div class="box">
+            <div class="ui card">
+                <div class="image landscape">
+                    <img class="imagen" src="https://media.forgecdn.net/attachments/description/974573/description_3b1b4375-5583-481c-b329-177be3d3d44c.png">
+                </div>
+                    <a class="texto-con-contorno font-extrabold">WHAT AM I LOOKING AT? (WAILA)</a>
+                    <div class="meta">
+                    <span class="texto-con-contorno2 font-extrabold" >r4isen1920</span>
+                    </div>
+                    <div class="description">
+                    <a class="button texto-con-contorno3 font-extrabold" href="https://edge.forgecdn.net/files/5197/798/WAILA.v2.0.r4isen1920.mcaddon?ft=2a7f33982f324ff07ec60d582acb7f7a&bd=38o40ev0ty">Download</a>
+                    </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="ui card">
+                <div class="image landscape">
+                    <img class="imagen" src="https://api.mcpedl.com/storage/submissions/200972/images/advancementpack--java-achievements--advancements-into-bedrock-addon-12030_2.png">
+                </div>
+                    <a class="texto-con-contorno font-extrabold">ADVANCEMENTPACK</a>
+                    <div class="meta">
+                    <span class="texto-con-contorno2 font-extrabold" >r4isen1920</span>
+                    </div>
+                    <div class="description">
+                    <a class="button texto-con-contorno3 font-extrabold" href="https://edge.forgecdn.net/files/5091/738/AdvancementPack.v4.1.r4isen1920.mcaddon?ft=2a7f33982f324ff07ec60d582acb7f7a&bd=38o40ev0ty">Download</a>
+                    </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="ui card">
+                <div class="image landscape">
+                    <img class="imagen" src="https://api.mcpedl.com/storage/submissions/154669/images/originspe--origins--classes--bedrock-edition-addon-v119_2.gif">
+                </div>
+                    <a class="texto-con-contorno font-extrabold">ORIGINSPE</a>
+                    <div class="meta">
+                    <span class="texto-con-contorno2 font-extrabold" >r4isen1920</span>
+                    </div>
+                    <div class="description">
+                    <a class="button texto-con-contorno3 font-extrabold" href="https://www.mediafire.com/file/cn8qof61lovpfwi/OriginsPE.v4.2.r4isen1920.mcaddon/file">Download</a>
+                    </div>
+            </div>
+        </div>
     </div>
 </Layout>
-
-
