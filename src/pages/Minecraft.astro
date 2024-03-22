@@ -13,7 +13,7 @@ import Layout from "../layouts/Layout.astro"
         .box {
             width: 90%; /* Ajusta el ancho del box */
             height: 300px; /* Altura deseada del box */
-            background-image:url(https://p4.wallpaperbetter.com/wallpaper/331/38/459/galaxy-blue-red-black-hd-wallpaper-preview.jpg); /* Color de fondo del box */
+            background-image:url(https://i.pinimg.com/originals/19/b4/3d/19b43dbf92a0b307cbbe9fcbf84c60c8.jpg); /* Color de fondo del box */
             padding: 20px; /* Espacio interior del box */
             border-radius: 10px; /* Borde redondeado del box */
             display: flex; /* Utilizamos flexbox para centrar la imagen */
@@ -51,14 +51,22 @@ import Layout from "../layouts/Layout.astro"
             align-self: center;
         }
         .texto-con-contorno {
-            -webkit-text-stroke: 1px white; /* Para navegadores basados en WebKit */
-            -webkit-text-stroke-color: 1px white; /* Para otros navegadores */
-            color: green; /* Color del texto */
+            font-size: 20px;
+            font-weight: 700;
+            text-shadow:
+            0 0 5px rgb(47, 144, 2),
+            0 0 25px rgb(47, 144, 2),
+            0 0 50px rgb(47, 144, 2),
+            0 0 100px rgb(47, 144, 2);
         }
         .texto-con-contorno2 {
-            -webkit-text-stroke: 1px black; /* Para navegadores basados en WebKit */
-            -webkit-text-stroke-color: 1px black; /* Para otros navegadores */
-            color: white; /* Color del texto */
+            font-size: 20px;
+            font-weight: 700;
+            text-shadow:
+            0 0 5px rgb(191, 0, 255),
+            0 0 25px rgb(191, 0, 255),
+            0 0 50px rgb(191, 0, 255),
+            0 0 100px rgb(191, 0, 255);
         }
         .texto-con-contorno3 {
             -webkit-text-stroke: 1px white; /* Para navegadores basados en WebKit */
