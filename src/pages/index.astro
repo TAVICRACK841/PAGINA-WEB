@@ -70,30 +70,40 @@ import Layout from '../layouts/Layout.astro';
       align-items: center;
       width: 150px;
       height: 100%;
-      background: aqua;
-      border: 2px solid aqua;
+      background: rgb(155, 3, 193);
+      border: 2px solid white;
       border-radius: 8px;
       font-size: 18px;
-      color: #081b29;
+      color: #fbfbfb;
       text-decoration: none;
       font-weight: 600;
       letter-spacing: 1px;
       z-index: 1;
       overflow: hidden;
-      transition: .5s;
+      transition: 1s;
     }
     .btn-box a:hover{
-      color: aqua;
+      color: rgb(0, 0, 0);
     }
     .btn-box a:nth-child(2){
-      background: #081b29;
+      background: #2e025e;
       color: aqua;
     }
     .btn-box a:nth-child(2)::after{
-      background: aqua;
+      background: rgb(149, 0, 255);
     }
     .btn-box a:nth-child(2):hover{
-      color: #081b29;
+      color: #ffffff;
+    }
+    .btn-box a:nth-child(3){
+      background: #081b29;
+      color: aqua;
+    }
+    .btn-box a:nth-child(3)::after{
+      background: aqua;
+    }
+    .btn-box a:nth-child(3):hover{
+      color: #ff0000;
     }
     .btn-box a::after {
       content: '';
@@ -102,16 +112,15 @@ import Layout from '../layouts/Layout.astro';
       left: 0;
       width: 0;
       height: 100%;
-      background: #081b29;
+      background: #dd00ff;
       z-index: -1;
-      transition: 0.5s;
+      transition: 1s;
     }
     .btn-box a:hover::after{
       width: 100%;
       height: 100%;
     }
     </style>
-    
     <div class="content">
       <h1 class="titulo">TAVICRACKWEB🎮</h1>
       <section class="home">
